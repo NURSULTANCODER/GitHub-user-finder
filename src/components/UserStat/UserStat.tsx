@@ -1,0 +1,21 @@
+import { GithubUserLocal } from '../../types';
+import styles from './UserStat.module.scss';
+
+interface UserStatProps extends Pick<GithubUserLocal, 'repos' | 'following' | 'followers'> { }
+
+export const UserStat = ({ repos, followers, following }: UserStatProps) => (
+  <div className={styles.userStat}>
+    <div className={styles.info}>
+      <div className={styles.infoTitle}>repos</div>
+      <div className={styles.infoNumber}>{repos}</div>
+    </div>
+    <div className={styles.info}>
+      <div className={styles.infoTitle}>following</div>
+      <div className={styles.infoNumber}>{following}</div>
+    </div>
+    <div className={styles.info}>
+      <div className={styles.infoTitle}>followers</div>
+      <div className={styles.infoNumber}>{followers}</div>
+    </div>
+  </div>
+);

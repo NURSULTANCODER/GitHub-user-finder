@@ -1,0 +1,15 @@
+export const defaultUser = {
+    "login": "NURSULTANCODER",
+    "id": 100400366,
+    "avatar": "https://avatars.githubusercontent.com/u/100400366?v=4",
+    "name": "Nursultan Chynarbek uulu",
+    "company": "Timely Soft",
+    "blog": "",
+    "location": "Bishkek",
+    "bio": "I`m a front-end developer.\r\n",
+    "twitter": null,
+    "repos": 5,
+    "followers": 0,
+    "following": 0,
+    "created": "2022-02-25T05:30:37Z",
+  }
